@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <title>Document</title> 
+</head>
+
+<body>
+  <Header class="Header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Construct_3_Logo.svg/1280px-Construct_3_Logo.svg.png" alt="" class="logo">
+    <ul class="Nav">
+      <li class="Nav-item"><a href="">Главная</a></li>
+      <li class="Nav-item"><a href="">О нас</a></li>
+      <li class="Nav-item"><a href="">История</a></li>
+      <li class="Nav-item"><a href="">Отзывы</a></li>
+      <li class="Nav-item"><a href="">Контакты</a></li>
+      <li class='burger' id='burger'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1100ff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+          <path d="M4 5h16" />
+          <path d="M4 12h16" />
+          <path d="M4 19h16" />
+        </svg>
+    </ul>
+    <div id="menu" class="menu">
+      <div class="menu-header">
+        <h3>Поиск и навигация</h3>
+        <button class="close-btn" id="closeMenu" aria-label="Закрыть меню">×</button>
+      </div>
+
+      <!-- Блок поиска -->
+      <section class="menu-section">
+        <h4>Поиск по сайту</h4>
+        <form class="search-form" id="siteSearch">
+          <input type="text" class="search-input" placeholder="Введите запрос..." id="searchInput" aria-label="Поле поиска">
+          <button type="submit" class="search-btn">Найти</button>
+        </form>
+      </section>
+
+      <!-- Основные разделы -->
+      <section class="menu-section">
+        <h4>Разделы сайта</h4>
+        <ul class="menu-links">
+          <li><a href="#articles" class="menu-link">Статьи</a></li>
+          <li><a href="#guides" class="menu-link">Руководства</a></li>
+          <li><a href="#news" class="menu-link">Новости</a></li>
+          <li><a href="#faq" class="menu-link">FAQ</a></li>
+        </ul>
+      </section>
+
+      <!-- Быстрые действия -->
+      <section class="menu-section">
+        <h4>Быстрое действие</h4>
+        <div class="quick-actions">
+          <button class="action-btn" id="toggleTheme">Тёмная тема</button>
+          <a href="#contact" class="action-btn">Связаться с нами</a>
+        </div>
+      </section>
+
+      <div class="menu-footer">
+        <p>Удобный доступ к основным функциям</p>
+      </div>
+    </div>
+
+  </Header>
+  <div class="site-container">
+    <main class="main-content">Основной контент</main>
+    <aside class="sidebar left">Левая колонка</aside>
+    <aside class="sidebar centr">Центральная колонка</aside>
+    <aside class="sidebar right">Правая колонка</aside>
+  </div>
+  <main class="main">
+    <div class="section_1">
+      <img class="image" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/42/c0/b042c014-0262-7c87-320e-3a06010fd0c6/AppIconNewYear-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x600wa.png" alt="">
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-220018529&id=456243463&hash=" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus et exercitationem quae maiores expedita enim unde accusamus perspiciatis odit animi nihil voluptatum ullam dignissimos dicta consectetur, qui corrupti aliquam. Necessitatibus?</div>
+    </div>
+    <div class="section_2">
+      <img class="image" src="https://s.cq.ru/img/f/e/2023/12/06/128748.png" alt="">
+
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus et exercitationem quae maiores expedita enim unde accusamus perspiciatis odit animi nihil voluptatum ullam dignissimos dicta consectetur, qui corrupti aliquam. Necessitatibus?</div>
+    </div>
+    <div class="section_3">
+      <div class="timer-text">До конца акции: </div>
+      <div class="timer">
+        <div class="hours">02 :</div>
+        <div class="minutes">47 :</div>
+        <div class="seconds">29 :</div>
+      </div>
+    </div>
+    <div class="section_4">
+      <div class="content">
+        <img src="https://avatars.mds.yandex.net/i?id=7daf050468bccf2eb9723f5129eb5a24fba55fac-12528274-images-thumbs&n=13" alt="" class="photo">
+        <div class="sub-text">lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="content">
+          <img src="https://avatars.mds.yandex.net/i?id=7c70d71202519ae21f6034dc4f9f8c746495ecb5-4828420-images-thumbs&n=13" alt="" class="photo">
+          <div class="sub-text">lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <div class="content">
+            <img src="https://avatars.mds.yandex.net/i?id=c795d5117819700570bfdbb7c7ae0853a5e17be5-12752873-images-thumbs&n=13" alt="" class="photo">
+            <div class="sub-text">lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+        </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>О компании</h3>
+        <p>Мы создаём современные веб‑решения с 2026 года. Наша команда профессионалов поможет воплотить ваши идеи в жизнь.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Быстрые ссылки</h3>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p>Email: строка пока не заполнена</p>
+        <p>Телефон: строка пока не заполнена</p>
+        <p>Адрес: строка пока не заполнена</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Соцсети</h3>
+        <div class="social-links">
+          <a href="#">VK</a>
+          <a href="#">MAX</a>
+          <a href="#">Yandex messenger</a>
+          <a href="#">Yandex teleconference</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Наша Компания. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
