@@ -1,0 +1,459 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+}
+
+a{
+  text-decoration
+}
+.logo {
+  widht: 80px;
+  height: 40px;
+}
+body {
+  background-color: #ff785a;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background-color: #191919;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.Nav-item {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+.Nav-item::after {
+  content: "";
+  position: absolute;
+  background-color: #f4515a;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: green;
+  transition: width 0.3s ease;
+}
+.Nav-item:hover {
+  background-color: royalblue;
+  transition: backround-color 0.9s ease;
+}
+
+.Nav-item:hover::after {
+  width: 100%;
+}
+
+
+.section_1{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 30px;
+  align-items: center;
+}
+
+.image{
+  width: 50%;
+}
+.text{
+  font-size: 24px;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.section_2{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 30px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.section_3 {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 350px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+.timer-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.timer > div {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content{
+  padding: 10px;
+  backround-image: linear-gradient(blue);
+  text-align: center;
+}
+.photo{}
+.sub-text{
+  color: black;
+  font-syze: 16px;
+}
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #bdc3c7;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #3498db;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #bdc3c7;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #34495e;
+  margin-top: 30px;
+  color: #bdc3c7;
+  font-size: 14px;
+}
+/* Сброс стандартных отступов и установка базовых стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Шапка сайта — на всю ширину */
+.site-header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Основной контейнер с 3 колонками */
+.site-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 равные колонки */
+  gap: 25px; /* Отступы между колонками */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 140px); /* Занимает всю высоту минус шапка и подвал */
+}
+
+/* Стили для основного контента (средняя колонка) */
+.main-content {
+  grid-column: 2; /* Располагается во 2‑й колонке */
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Стили для боковых колонок */
+.sidebar {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+.sidebar.left {
+  grid-column: 1; /* Левая колонка — 1‑я */
+}
+
+.sidebar.right {
+  grid-column: 3; /* Правая колонка — 3‑я */
+}
+
+/* Подвал сайта — на всю ширину */
+.site-footer {
+  background: #34495e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+/* Общие стили для контента внутри колонок */
+.main-content h1,
+.sidebar h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.main-content p,
+.sidebar p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Адаптивность для планшетов (2 колонки) */
+@media (max-width: 1024px) {
+  .site-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Перераспределяем элементы для планшетов */
+  .main-content {
+    grid-column: 1 / -1; /* Основной контент на всю ширину */
+  }
+  
+  .sidebar.left {
+    grid-column: 1;
+  }
+  
+  .sidebar.right {
+    grid-column: 2;
+  }
+}
+
+/* Адаптивность для мобильных (1 колонка) */
+@media (max-width: 768px) {
+  .site-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  /* Все элементы идут друг за другом */
+  .main-content,
+  .sidebar {
+    grid-column: 1;
+  }
+  
+  /* Уменьшаем отступы для мобильных */
+  .site-container {
+    padding: 10px;
+  }
+  
+  .main-content,
+  .sidebar {
+    padding: 15px;
+  }
+}
+
+/* Дополнительные стили для разных классов внутри колонок */
+.highlight {
+  background: #fff9c4;
+  padding: 10px;
+  border-left: 3px solid #ffd54f;
+  margin: 15px 0;
+}
+
+.button {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #c0392b;
+}
+
+.image-container {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu{
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  left: 0;
+  color: royalblack;
+  display: none;
+}
+.active{
+  display: block;
+}
+
+.burger{
+  position: absolute;
+  top: 15;
+  right: 15px;
+  z-index: 100;
+}
+
+.search-widget {
+  position: relative;
+  display: inline-block;
+}
+
+.search-toggle {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.search-toggle:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  z-index: 1000;
+  padding: 16px;
+}
+
+/* Стили для элементов внутри выпадающего меню (беру из предыдущего варианта) */
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 13px;
+}
+
+.search-input:focus {
+  border-color: #1100ff;
+}
+
+.search-btn {
+  padding: 8px 12px;
+  background: #1100ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.search-btn:hover {
+  background: #0a00cc;
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text{
+  font-family: "Merriweather", serif;
+}
